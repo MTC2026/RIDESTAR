@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RIDESTAR</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js import map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- 3D game container -->
+    <div id="game-container"></div>
+
+    <!-- Game interface -->
+    <div id="hud">
+
+        <div id="game-title">
+            RIDESTAR <span>OPEN WORLD</span>
+        </div>
+
+        <div id="mission">
+            <h3>MISSION</h3>
+            <p>Explore the city</p>
+        </div>
+
+        <div id="player-stats">
+            <div>HEALTH <span id="health">100</span></div>
+            <div>MONEY $<span id="money">500</span></div>
+            <div>WANTED <span id="wanted">☆☆☆☆☆</span></div>
+        </div>
+
+        <div id="controls">
+            <b>CONTROLS</b>
+            <p>W A S D — Move</p>
+            <p>SHIFT — Run</p>
+            <p>MOUSE — Look around</p>
+        </div>
+
+        <div id="start-screen">
+            <h1>RIDESTAR</h1>
+            <p>Explore your city.</p>
+            <button id="start-button">START GAME</button>
+            <small>Use headphones for the best experience.</small>
+        </div>
+
+    </div>
+
+    <script type="module" src="game.js"></script>
+
+</body>
+</html>
